@@ -1,18 +1,17 @@
-<aside>
-	<div class="container">
-		<nav>
-			<ul>
-				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-				{% endif %} {% endfor %}
-				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
-			</ul>
-			</li>
-			</ul>
-		</nav>
-	</div>
-</aside>
+<header class="header">
+	<section class="header_top">
+		<div class="header_top_container container">
+			<a href="{{ site.baseurl }}" class="header_top_link">
+				&lt; Return to Homepage
+			</a>
+		</div>
+	</section>
 
-<header>
-	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+	<section class="header_bottom">
+		<div class="header_bottom_container container">
+			<a href="{{ site.baseurl }}" class="header_bottom_home-link">
+				<img src="images/arekibo-logo.jpg" alt="Arekibo logo" />
+			</a>
+		</div>
+	</section>
 </header>

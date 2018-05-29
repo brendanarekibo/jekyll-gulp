@@ -1,3 +1,19 @@
-<footer>
-	<p>By <a href="http://brendanmacdonagh.com.com">Brendan</p>
+<footer class="footer">
+	<section class="footer_content container">
+		{% if site.social_links %}
+			<h2 class="footer_heading">
+				Keep in touch
+			</h2>
+
+			<ul class="footer_list">
+				{% for social_link in site.social_links %}
+					<li class="footer_list_item">
+						<a href="{{ social_link.url }}" class="footer_list_link">
+							<i class="footer_list_social-icon fab {{ social_link.fontawesome_code }}"></i>	
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</section>
 </footer>

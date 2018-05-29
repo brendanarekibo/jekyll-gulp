@@ -13,14 +13,25 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: First time with Jekyll
+title: Arekibo - Jekyll boilerplate
 email: brendan.macdonagh@arekibo.com
 description: >- # this means to ignore newlines until "baseurl:"
   First Jekyll template
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# social links 
+social_links:
+  - fontawesome_code : 'fa-facebook-f'
+    url   : '#'
+  - fontawesome_code : 'fa-youtube'
+    url   : '#'
+  - fontawesome_code : 'fa-twitter'
+    url   : '#'
+  - fontawesome_code : 'fa-instagram'
+    url   : '#'
+  - fontawesome_code : 'fa-linkedin-in'
+    url   : '#'   
 
 # Build settings
 
@@ -32,19 +43,7 @@ github_username:  jekyll
 include: ['_pages']
 markdown: redcarpet
 kramdown:
-  input: GFM
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  input: GFM         
 
 exclude: ["vendor",
           "_assets",
