@@ -1,9 +1,18 @@
 # Boilerplate for Jekyll and Gulp
 
 ## Process
-Clone repository
-run npm install
-run gulp serve
+- Clone repository
+- run npm install
+- run gulp serve
+
+#paths
+Paths located in _assets/gulp_config. Some are Jekyll specific. Can be re-jigged to be more generic for other templates
+
+#Gulp tasks
+- Complile Sass, uses PostCSS to auto prefix for up to last two browsers
+- build CSS file
+- Build and minify scripts into one JS file
+- Uses imagemin (Options can be included i.e. make progressive)
 
 ## Tutorials followed
 - https://www.taniarascia.com/make-a-static-website-with-jekyll/
